@@ -1,0 +1,71 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "PharmaNet Documentation",
+  "colors": {
+    "primary": "#2563eb",
+    "light": "#f8fafc",
+    "dark": "#1e293b"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index",
+              "quickstart",
+              "user-roles"
+            ]
+          },
+          {
+            "group": "Core Network Features",
+            "pages": [
+              "features/onboarding",
+              "features/inventory",
+              "features/chat"
+            ]
+          },
+          {
+            "group": "Marketplace & Monetization",
+            "pages": [
+              "features/search-monetization",
+              "features/product-boosting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Architecture",
+        "groups": [
+          {
+            "group": "System Design",
+            "pages": [
+              "architecture/overview",
+              "architecture/tech-stack",
+              "architecture/database"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  }
+}
