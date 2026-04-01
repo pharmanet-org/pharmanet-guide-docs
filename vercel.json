@@ -1,9 +1,12 @@
 {
-    "buildCommand": "npm run sources && npm run build",
-    "outputDirectory": "build",
-    "installCommand": "npm install",
-    "framework": null,
-    "env": {
-        "NODE_OPTIONS": "--max-old-space-size=4096"
-    }
+    "rewrites": [
+        {
+            "source": "/docs",
+            "destination": "https://bilalworku.mintlify.dev/docs"
+        },
+        {
+            "source": "/docs/:match*",
+            "destination": "https://bilalworku.mintlify.dev/docs/:match*"
+        }
+    ]
 }
