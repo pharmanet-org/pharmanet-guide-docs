@@ -1,0 +1,101 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "CreatorFlow API",
+    "description": "API for the CreatorFlow Content Creator Collaboration Platform",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.creatorflow.com/v1"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "summary": "User registration",
+        "description": "Register a new user with email and password",
+        "security": [],
+        "responses": {
+          "201": { "description": "User registered successfully" },
+          "400": { "description": "Invalid input" }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "User login",
+        "description": "Login with email and password to obtain a JWT",
+        "security": [],
+        "responses": {
+          "200": { "description": "Login successful" },
+          "401": { "description": "Unauthorized" }
+        }
+      }
+    },
+    "/teams": {
+      "get": {
+        "summary": "List teams",
+        "description": "Returns a list of teams the user is a member of",
+        "responses": {
+          "200": { "description": "List of teams" }
+        }
+      },
+      "post": {
+        "summary": "Create team",
+        "description": "Create a new team workspace",
+        "responses": {
+          "201": { "description": "Team created successfully" }
+        }
+      }
+    },
+    "/projects": {
+      "get": {
+        "summary": "List projects",
+        "description": "Returns a list of projects in the current team",
+        "responses": {
+          "200": { "description": "List of projects" }
+        }
+      },
+      "post": {
+        "summary": "Create project",
+        "description": "Create a new project within a team",
+        "responses": {
+          "201": { "description": "Project created successfully" }
+        }
+      }
+    },
+    "/files/upload-url": {
+      "post": {
+        "summary": "Get upload URL",
+        "description": "Returns a pre-signed URL for direct-to-S3/R2 upload",
+        "responses": {
+          "200": { "description": "Pre-signed URL generated" }
+        }
+      }
+    },
+    "/calendar": {
+      "get": {
+        "summary": "Get calendar",
+        "description": "Returns the team's shared content calendar",
+        "responses": {
+          "200": { "description": "Calendar events list" }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
