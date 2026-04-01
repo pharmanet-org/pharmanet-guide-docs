@@ -1,0 +1,35 @@
+---
+title: System Architecture Overview
+description: "A high-level overview of PharmaNet's technical design"
+---
+
+## High-Level Architecture
+
+PharmaNet is built with a **mobile-first** philosophy, utilizing a cross-platform Flutter application for the network members and a robust Next.js administrative portal for ecosystem management.
+
+### Platform Layers
+
+- **Client Layer (Mobile)**: Flutter (Dart) with Riverpod/Provider for state management, targeting Android and future iOS support.
+- **Client Layer (Web)**: Next.js (React) for the Administrator and Dealer verification portals.
+- **API and Backend**: Node.js and Express.js providing the business logic layer.
+- **Data & Real-time Layer**: Supabase (PostgreSQL) for relational data, Supabase Auth for security, and Socket.io for messaging.
+- **Cloud Infrastructure**: Firebase Cloud Messaging (FCM) for push notifications and Supabase Storage for secure license/image hosting.
+
+### Core System Components
+
+| Component | Responsibility |
+| :--- | :--- |
+| **Auth Service** | Supabase Auth handling mobile OTP and JWT-based session security. |
+| **Verification Service** | Admin-led workflow for business license approval and user activation. |
+| **Product & Inventory** | Prisma-managed access to the shared medicine catalog and stock updates. |
+| **Messaging (Socket.io)** | Real-time negotiation channels with document attachment support. |
+| **Monetization Engine** | Logic for product boosting and one-time advanced search unlocking. |
+| **Push Notifications** | FCM-powered alerts for order updates and verification approvals. |
+
+### Data Flow
+
+1. **User Onboarding**: Mobile users register with OTP, triggering an initial account entry in Supabase and the `profiles` table.
+2. **Business Verification**: Licensing documents are uploaded to Supabase Storage, and a pending status is set in the `sellers` table.
+3. **Admin Approval**: Administrators verify licenses through the web portal, updating the seller's status and triggering an FCM notification to the mobile client.
+4. **Active Trading**: Verified sellers list products via Prisma ORM, becoming instantly searchable by the network.
+5. **Real-time Interaction**: Sellers and Customers negotiate prices over Socket.io, sharing payment proofs to complete offline bank-transfer settlements.
