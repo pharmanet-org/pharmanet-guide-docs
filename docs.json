@@ -4,7 +4,7 @@
   "name": "PharmaNet Documentation",
   "colors": {
     "primary": "#2563eb",
-    "light": "#f8fafc",
+    "light": "#2563eb",
     "dark": "#1e293b"
   },
   "favicon": "/favicon.svg",
