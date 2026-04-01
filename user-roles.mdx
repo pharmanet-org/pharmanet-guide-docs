@@ -1,0 +1,36 @@
+---
+title: User Roles & Permissions
+description: 'Understanding who can do what on the PharmaNet verified network'
+---
+
+PharmaNet utilizes a strict role-based access control (RBAC) system to ensure trust and data integrity.
+
+## Detailed Permissions Matrix
+
+| Privilege | **Admin** | **Seller** | **Dealer** | **Public** |
+| :--- | :---: | :---: | :---: | :---: |
+| **Verify Users** | ✅ | ❌ | ❌ | ❌ |
+| **Publish Inventory** | ❌ | ✅ | ✅ | ❌ |
+| **Update Global Settings** | ✅ | ❌ | ❌ | ❌ |
+| **Browse Inventories** | ✅ | ✅ | ✅ | ✅ |
+| **Negotiate via Chat** | ❌* | ✅ | ✅ | ✅ |
+| **Boost Products** | ❌ | ✅ | ✅ | ❌ |
+| **Advanced Search Filters** | ✅ | ✅ | ✅ | Paid Unlock |
+
+*\* Admins have read-only oversight of chat activity for moderation purposes but do not participate in negotiations.*
+
+### Role Descriptions
+
+#### 1. Sellers (Retail & Hospital Pharmacies)
+Sellers are the backbone of the network's retail layer. They can browse product catalogs from Dealers, initiate chats, select products to feature on their public profiles, and view their individual dashboards.
+
+#### 2. Dealers (Distributors & Manufacturers)
+Dealers represent the supply layer, publishing live inventories of bulk pharmaceuticals. They verify and negotiate with Sellers and manage large-scale stock lists through the Dealer Portal.
+
+#### 3. Public Users
+Public users are the general community looking for specific medicines. They have access to:
+- **Free Basic Search**: Search for product names across the network.
+- **Paid Advanced Search**: A one-time unlock granting access to advanced filters and featured product highlights.
+
+#### 4. Administrators
+Platform moderators who handle Business Verification, view all platform activity, moderate reviews, and ensure the pharmaceutical network remains safe and reliable.
