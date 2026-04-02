@@ -18,7 +18,9 @@
             "pages": [
               "index",
               "quickstart",
-              "user-roles"
+              "user-roles",
+              "authentication"
+
             ]
           },
           {
