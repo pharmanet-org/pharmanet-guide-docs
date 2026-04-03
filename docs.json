@@ -41,25 +41,32 @@
         ]
       },
       {
-        "tab": "Architecture",
+        "tab": "Pharmacy",
         "groups": [
           {
-            "group": "System Design",
+            "group": "Pharmacist Guide",
             "pages": [
-              "architecture/overview",
-              "architecture/tech-stack",
-              "architecture/database"
+              "pharmacy/registration",
+              "pharmacy/inventory-management",
+              "pharmacy/order-processing",
+              "pharmacy/profile-settings"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Dealers",
         "groups": [
           {
-            "group": "Endpoints",
+            "group": "dealer Guide",
             "pages": [
-              "api-reference/introduction"
+               "dealer/account-setup",
+               "dealer/listing-products",
+               "dealer/managing-orders",
+               "dealer/payments",
+               "dealer/analytics"
+
+
             ]
           }
         ]
