@@ -47,8 +47,10 @@
             "group": "Pharmacist Guide",
             "pages": [
               "pharmacy/registration",
+              "pharmacy/pharmacist-dashboard",
               "pharmacy/inventory-management",
               "pharmacy/order-processing",
+              "pharmacy/customer-chats",
               "pharmacy/profile-settings"
             ]
           }
