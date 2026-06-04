@@ -1,0 +1,73 @@
+---
+title: Cart & Checkout
+description: 'Add items to your cart and place an order'
+---
+
+## Add an Item to Cart
+
+1. Go to any product detail page
+2. In the bottom bar, tap the **cart icon** (labeled with a cart symbol)
+3. A green toast appears: *"`{product name}` added to cart"*
+4. This works even if you're not logged in
+
+## Buy Now (Add and Go to Checkout)
+
+1. On a product detail page, tap **Buy Now** in the bottom bar
+2. This clears your cart, adds the single product, and navigates to checkout
+3. If not logged in: you'll see a login dialog at checkout
+
+## Open Your Cart
+
+1. Tap the **Cart** tab (third icon — labeled "Cart")
+
+**If you're a guest:**
+- You see a person icon, "Login Required" title, and description about signing in
+- Tap **Sign In / Create Account** to go to the login screen
+- Your cart items are saved locally — they'll still be there after you log in
+
+**If you're signed in:**
+- Each cart item shows: product image, name, manufacturer, price (ETB), quantity selector
+- Tap **+** or **-** to adjust quantity
+- Tap the **trash icon** (top-right of app bar) to clear the entire cart
+- A confirmation dialog appears: *"Clear Cart — Are you sure you want to remove all items from your cart?"*
+  - Tap **CLEAR ALL** to confirm, or **CANCEL**
+
+## Cart Summary
+
+At the bottom of the cart page:
+
+| Item | Value |
+|------|-------|
+| **Subtotal** | Sum of all item prices |
+| **Delivery Fee** | FREE |
+| **Total Amount** | Final total in ETB |
+
+Tap **Proceed to Checkout** to continue.
+
+## Checkout
+
+1. On the checkout page, start with **Shipping Address**:
+   - If no address is saved: tap **Add New** to enter one
+   - If you have addresses: the selected one is shown with name, address line, city, country
+   - Tap the **edit icon** (pencil) to change the address
+2. **Order Summary** shows each item with quantity, name, and line total
+3. **Upload Prescription** — Only visible if any item requires a prescription:
+   - Tap the upload area to select a photo from your gallery
+   - The selected image preview appears
+4. **Total** shows the final amount in ETB
+5. Tap **Pay Now**
+
+## Payment Process
+
+After tapping **Pay Now**:
+
+1. **Not logged in?** A dialog appears: *"Login Required — Please login to access this feature."* Tap **Login** to go sign in
+2. **No address selected?** A red toast: *"Please select a shipping address first"*
+3. **Prescription required but not uploaded?** A red toast: *"Customers must upload a prescription"*
+4. If all checks pass:
+   - The order is created
+   - The Chapa payment page opens in your browser
+   - Complete payment on the Chapa page
+   - When payment succeeds, you're returned to the app
+   - Your cart is cleared
+   - A success message shows: *"Payment confirmed! Order is being prepared."*

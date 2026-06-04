@@ -55,6 +55,22 @@
         ]
       },
       {
+        "tab": "Customer",
+        "groups": [
+          {
+            "group": "Customer Guide",
+            "pages": [
+              "customer/getting-started",
+              "customer/browsing",
+              "customer/pharmacies",
+              "customer/cart-checkout",
+              "customer/orders",
+              "customer/profile"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Dealers",
         "groups": [
           {
@@ -65,6 +81,7 @@
                "dealer/managing-orders",
                "dealer/payments",
                "dealer/analytics"
+
 
 
             ]
