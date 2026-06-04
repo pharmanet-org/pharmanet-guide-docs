@@ -47,8 +47,10 @@
             "group": "Pharmacist Guide",
             "pages": [
               "pharmacy/registration",
+              "pharmacy/pharmacist-dashboard",
               "pharmacy/inventory-management",
               "pharmacy/order-processing",
+              "pharmacy/customer-chats",
               "pharmacy/profile-settings"
             ]
           }
@@ -84,6 +86,52 @@
 
 
 
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "አማርኛ",
+        "groups": [
+          {
+            "group": "መመሪያዎች",
+            "pages": [
+              "am/index",
+              "am/quickstart",
+              "am/user-roles",
+              "am/authentication"
+            ]
+          },
+          {
+            "group": "የፋርማሲስት መመሪያ",
+            "pages": [
+              "am/pharmacy/registration",
+              "am/pharmacy/pharmacist-dashboard",
+              "am/pharmacy/inventory-management",
+              "am/pharmacy/order-processing",
+              "am/pharmacy/customer-chats",
+              "am/pharmacy/profile-settings"
+            ]
+          },
+          {
+            "group": "የደንበኛ መመሪያ",
+            "pages": [
+              "am/customer/getting-started",
+              "am/customer/browsing",
+              "am/customer/pharmacies",
+              "am/customer/cart-checkout",
+              "am/customer/orders",
+              "am/customer/profile"
+            ]
+          },
+          {
+            "group": "የመድረክ ባህሪያት",
+            "pages": [
+              "am/features/onboarding",
+              "am/features/inventory",
+              "am/features/chat",
+              "am/features/search-monetization",
+              "am/features/product-boosting"
             ]
           }
         ]
