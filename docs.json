@@ -1,91 +1,72 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "PharmaNet Documentation",
+  "theme": "default",
+  "name": "PharmaNet Help Center",
   "colors": {
-    "primary": "#2563eb",
-    "light": "#2563eb",
-    "dark": "#1e293b"
+    "primary": "#1B5E20",
+    "light": "#4CAF50",
+    "dark": "#0D3320"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Home",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "user-roles",
-              "authentication"
-
-            ]
-          },
-          {
-            "group": "Core Network Features",
-            "pages": [
-              "features/onboarding",
-              "features/inventory",
-              "features/chat"
-            ]
-          },
-          {
-            "group": "Marketplace & Monetization",
-            "pages": [
-              "features/search-monetization",
-              "features/product-boosting"
+              "quickstart"
             ]
           }
         ]
       },
       {
-        "tab": "Pharmacy",
+        "tab": "Customer Guide",
         "groups": [
           {
-            "group": "Pharmacist Guide",
+            "group": "Using PharmaNet as a Customer",
             "pages": [
-              "pharmacy/registration",
-              "pharmacy/pharmacist-dashboard",
-              "pharmacy/inventory-management",
-              "pharmacy/order-processing",
-              "pharmacy/customer-chats",
-              "pharmacy/profile-settings"
+              "customer/index",
+              "customer/create-account",
+              "customer/find-products",
+              "customer/visit-pharmacies",
+              "customer/place-order",
+              "customer/track-orders",
+              "customer/manage-account"
             ]
           }
         ]
       },
       {
-        "tab": "Customer",
+        "tab": "Seller Guide",
         "groups": [
           {
-            "group": "Customer Guide",
+            "group": "Using PharmaNet as a Pharmacy",
             "pages": [
-              "customer/getting-started",
-              "customer/browsing",
-              "customer/pharmacies",
-              "customer/cart-checkout",
-              "customer/orders",
-              "customer/profile"
+              "seller/index",
+              "seller/register",
+              "seller/dashboard",
+              "seller/manage-products",
+              "seller/process-orders",
+              "seller/chat-customers",
+              "seller/reports",
+              "seller/payments",
+              "seller/promotions",
+              "seller/account-settings"
             ]
           }
         ]
       },
       {
-        "tab": "Dealers",
+        "tab": "Help & Support",
         "groups": [
           {
-            "group": "dealer Guide",
+            "group": "Need Help?",
             "pages": [
-               "dealer/account-setup",
-               "dealer/listing-products",
-               "dealer/managing-orders",
-               "dealer/payments",
-               "dealer/analytics"
-
-
-
+              "help/index",
+              "help/contact"
             ]
           }
         ]
@@ -94,44 +75,44 @@
         "tab": "አማርኛ",
         "groups": [
           {
-            "group": "መመሪያዎች",
+            "group": "መጀመሪያ ላይ",
             "pages": [
               "am/index",
-              "am/quickstart",
-              "am/user-roles",
-              "am/authentication"
-            ]
-          },
-          {
-            "group": "የፋርማሲስት መመሪያ",
-            "pages": [
-              "am/pharmacy/registration",
-              "am/pharmacy/pharmacist-dashboard",
-              "am/pharmacy/inventory-management",
-              "am/pharmacy/order-processing",
-              "am/pharmacy/customer-chats",
-              "am/pharmacy/profile-settings"
+              "am/quickstart"
             ]
           },
           {
             "group": "የደንበኛ መመሪያ",
             "pages": [
-              "am/customer/getting-started",
-              "am/customer/browsing",
-              "am/customer/pharmacies",
-              "am/customer/cart-checkout",
-              "am/customer/orders",
-              "am/customer/profile"
+              "am/customer/index",
+              "am/customer/create-account",
+              "am/customer/find-products",
+              "am/customer/visit-pharmacies",
+              "am/customer/place-order",
+              "am/customer/track-orders",
+              "am/customer/manage-account"
             ]
           },
           {
-            "group": "የመድረክ ባህሪያት",
+            "group": "የፋርማሲ ባለቤት መመሪያ",
             "pages": [
-              "am/features/onboarding",
-              "am/features/inventory",
-              "am/features/chat",
-              "am/features/search-monetization",
-              "am/features/product-boosting"
+              "am/seller/index",
+              "am/seller/register",
+              "am/seller/dashboard",
+              "am/seller/manage-products",
+              "am/seller/process-orders",
+              "am/seller/chat-customers",
+              "am/seller/reports",
+              "am/seller/payments",
+              "am/seller/promotions",
+              "am/seller/account-settings"
+            ]
+          },
+          {
+            "group": "እገዛ እና ድጋፍ",
+            "pages": [
+              "am/help/index",
+              "am/help/contact"
             ]
           }
         ]
