@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "default",
+  "theme": "mint",
   "name": "PharmaNet Help Center",
   "colors": {
     "primary": "#1B5E20",
